@@ -48,6 +48,20 @@
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<script type="text/javascript" src="//use.typekit.net/ckj4brc.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+<script src="wp-content/themes/toolbox/js/jquery-scrolltofixed.js" type="text/javascript"></script>
+<script>
+    $(document).ready(function() {
+
+        // Dock the header to the top of the window when scrolled past the banner.
+        // This is the default behavior.
+
+        $('#secondary').scrollToFixed();
+    });
+</script>
+
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
@@ -66,9 +80,10 @@
 <?php do_action( 'before' ); ?>
 	<header id="branding" role="banner">
 		<hgroup>
-			<h1 id="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
+			<h1 id="site-title"><a href="<?php echo home_url( '/' ); ?>" class="title-link" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<!-- <h2 id="site-description"><?php bloginfo( 'description' ); ?></h2> -->
 		</hgroup>
+		<div id ="banner-image">Banner Image Here</div>
 	</header><!-- #branding -->
 
 	<div id="main">
