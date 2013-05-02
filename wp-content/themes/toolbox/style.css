@@ -16,6 +16,16 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* =Structure
 -------------------------------------------------------------- */
 
+body {
+	background-color: #EAECEA;
+	max-width: 978px;
+	margin:0 auto;
+}
+
+ul {
+	list-style-type: none;
+}
+
 #page {
 	display: block;
 	margin: 1em;
@@ -71,13 +81,30 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	margin-right: auto;
 }
 
+/* =Styles I've added
+-------------------------------------------------------------- */
+h1 {
+	font-family: "ff-ernestine-web-pro",sans-serif;
+	/*font-family: "omnes-pro",sans-serif;*/
+	font-weight: 300;
+}
+
+h1.entry-title a:hover {
+	color:#68C4A4;
+}
+
+a:-webkit-any-link {
+	text-decoration: none;
+	color:#333333;
+}
+
 
 /* =Header
 -------------------------------------------------------------- */
 #banner-image {
-	height:400px;
+	height:360px;
 	background-color: #666;
-	margin:1em 0 0 0;
+	margin:0 0 0 0;
 }
 
 #site-title {
@@ -88,7 +115,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	font-weight: 200;
 	position: fixed;
 	top:0em;
-	background-color: #fff;
 	padding:10px 0 0 0;
 }
 .title-link {
@@ -110,10 +136,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	display: block;
 	float: left;
 	margin: 0 auto;
-	width: 100%;
+	width: 978px;
 	position: fixed;
 	top:0;
-	background-color: #fff;
+	background-color: #EAECEA;
 	padding:10px 0 0 0;
 }
 #access ul {
@@ -125,12 +151,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
 #access li {
 	float: left;
 	position: relative;
+	font-family: "ff-ernestine-web-pro",sans-serif;
 }
 #access a {
 	display: block;
 	line-height: 2em;
 	padding: 0 1em;
 	text-decoration: none;
+	color:#666;
 }
 #access ul ul {
 	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
@@ -148,7 +176,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	top: 0;
 }
 #access ul ul a {
-	background: #dedede;
 	line-height: 1em;
 	padding: .5em .5em .5em 1em;
 	width: 10em;
@@ -156,7 +183,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 #access li:hover > a,
 #access ul ul :hover > a {
-	background: #dedede;
+	color: #68C4A4;
 }
 #access ul ul a:hover {
 	background: #cecece;
@@ -410,6 +437,11 @@ article.comment {
 }
 .widget-area .widget_search input {
 	float: left;
+}
+
+.widget-title {
+	font-size: 1em;
+	font-weight: 400;
 }
 
 
