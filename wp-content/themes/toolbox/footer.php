@@ -12,11 +12,8 @@
 	</div><!-- #main -->
 
 	<footer id="colophon" role="contentinfo">
-		<div id="site-generator">
-			<?php do_action( 'toolbox_credits' ); ?>
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'toolbox' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'toolbox' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'toolbox' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'toolbox' ), 'Toolbox', '<a href="http://automattic.com/" rel="designer">Automattic</a>' ); ?>
+		<div class="footer-info">
+			<p>© Grandpubbah. Website built by OpticPop</p>
 		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->

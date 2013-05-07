@@ -85,17 +85,31 @@ ul {
 -------------------------------------------------------------- */
 h1 {
 	font-family: "ff-ernestine-web-pro",sans-serif;
-	/*font-family: "omnes-pro",sans-serif;*/
 	font-weight: 300;
+}
+
+h1.entry-title {
+	margin:0;
 }
 
 h1.entry-title a:hover {
 	color:#68C4A4;
 }
 
+h3 {
+	font-family: "ff-ernestine-web-pro",sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+}
+
 a:-webkit-any-link {
 	text-decoration: none;
 	color:#333333;
+}
+
+p {
+	font-family: "omnes-pro",sans-serif;
+	font-weight: 300;
 }
 
 
@@ -192,6 +206,20 @@ a:-webkit-any-link {
 	display: block;
 }
 
+a:link {
+
+}
+
+a:hover {
+	color:#68C4A4;
+}
+/* =CLASSES Menu
+-------------------------------------------------------------- */
+.menu-classes-container {
+	font-family: "jubilat",sans-serif;
+	font-weight: 200;
+	margin:0 0 10em 0;
+}
 
 /* =Content
 -------------------------------------------------------------- */
@@ -210,6 +238,9 @@ a:-webkit-any-link {
 .entry-meta {
 	clear: both;
 	display: block;
+	font-family: "omnes-pro",sans-serif;
+	font-weight: 300;
+	font-size: 1em;
 }
 .single-author .entry-meta .byline {
 	display: none;
@@ -381,6 +412,31 @@ img.alignright {
 /* =Forms
 -------------------------------------------------------------- */
 
+/* MAILCHIMP EMAIL FORM */
+ 
+.widget_mailchimpsf_widget {
+	border:1px solid #333333;
+	padding:5px;
+}
+
+.mc_var_label {
+ 	color:#333333;
+ 	font-family: "jubilat",sans-serif;
+	font-weight: 200;
+ }
+
+.mc_input {
+ 	color:#333333;
+ 	border:0;
+ }
+.button {
+ 	background-color:#333333;
+ 	color:#9ED7C6;
+ 	border:0;
+ 	width:100%;
+ 	cursor: pointer;
+ }
+
 #searchform label {
 	display: none;
 }
@@ -390,7 +446,7 @@ img.alignright {
 input[type=text],
 input#s {
 	margin: 0 1em 0 0;
-	width: 60%;
+	width: 100%;
 }
 textarea {
 	width: 80%;
@@ -400,7 +456,6 @@ textarea {
 .required {
 	color: #cc0033;
 }
-
 
 /* =Comments
 -------------------------------------------------------------- */
@@ -451,3 +506,10 @@ article.comment {
 #colophon {
 	padding: 1em 0 0;
 }
+
+#site-generator {
+	margin:5em 0 0 0;
+}
+
+
+
