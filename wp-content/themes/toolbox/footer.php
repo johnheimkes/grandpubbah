@@ -17,12 +17,16 @@
 		<div class="col-footer">
 			<h3 class="footer-h3">Spring 2013 class schedule</h3>
 			<h4 class="footer-h4">Douglas Brull</h4>
-			<p class="schedule-bold">Portfolio / Portfolio Prep</p>
-			<p class="schedule">T/R 5:00pm – 8:00pm</p>
-			<p class="schedule-bold">Design Production Team</p>
-			<p class="schedule">T/R 8:00pm – 11:00pm</p>
+			<div class="class-schedule">
+				<p class="schedule-bold">Portfolio / Portfolio Prep</p>
+				<p class="schedule">T/R 5:00pm – 8:00pm</p>
+				<p class="schedule-bold">Design Production Team</p>
+				<p class="schedule">T/R 8:00pm – 11:00pm</p>
+			</div>
 			<h4 class="footer-h4">Matthew Luken</h4>
-			<p class="schedule-bold">Not teaching this quarter</p>
+			<div class="class-schedule">
+				<p class="schedule-bold">Not teaching this quarter</p>
+			</div>
 		</div>
 		
 		<!-- SECOND COLUMN, SCHEDULE FOR EACH QUARTER INFO -->
