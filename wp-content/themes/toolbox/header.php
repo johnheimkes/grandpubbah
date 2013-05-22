@@ -48,10 +48,15 @@
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 <script type="text/javascript" src="//use.typekit.net/ckj4brc.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+</script>
 <script src="wp-content/themes/toolbox/js/jquery-scrolltofixed.js" type="text/javascript"></script>
+
+
 <script>
     $(document).ready(function() {
 
@@ -60,6 +65,12 @@
 
         $('#nav_menu-2').scrollToFixed();
     });
+
+    //toggle classes side menu animation
+		$(".menu-item").click(function(){
+		  $(".menu-item-object-page").toggle();
+		});
+
 </script>
 
 <!--[if lt IE 9]>
