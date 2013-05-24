@@ -525,6 +525,7 @@ article.comment {
 
 #colophon {
 	padding: 1em 0 0;
+	width:100%;
 }
 
 .col-footer {
@@ -532,6 +533,7 @@ article.comment {
 	display: block;
 	float: left;
 	background-color: #9ED7C6;
+	height:300px;
 }
 
 h3.footer-h3 {

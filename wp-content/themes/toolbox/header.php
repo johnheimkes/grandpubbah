@@ -66,10 +66,14 @@
         $('#nav_menu-2').scrollToFixed();
     });
 
-    //toggle classes side menu animation
-		$(".menu-item").click(function(){
-		  $(".menu-item-object-page").toggle();
-		});
+    // classes side menu animation drop down
+		$(function(){
+		   $('.menu > li > ul').hide();
+		   $('#menu-classes > li').click(function(){
+		       $(this).find('ul').slideToggle(500)
+		           .siblings().find('ul:visible').slideUp(500);
+		   });
+		})
 
 </script>
 

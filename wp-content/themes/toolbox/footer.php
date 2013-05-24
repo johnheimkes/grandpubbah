@@ -16,6 +16,7 @@
 		<!-- FIRST COLUMN, SCHEDULE FOR EACH QUARTER INFO -->
 		<div class="col-footer">
 			<h3 class="footer-h3">Spring 2013 class schedule</h3>
+			<!-- Doug's Schedule -->
 			<h4 class="footer-h4">Douglas Brull</h4>
 			<div class="class-schedule">
 				<p class="schedule-bold">Portfolio / Portfolio Prep</p>
@@ -23,6 +24,7 @@
 				<p class="schedule-bold">Design Production Team</p>
 				<p class="schedule">T/R 8:00pm – 11:00pm</p>
 			</div>
+			<!-- Matthews's Schedule -->
 			<h4 class="footer-h4">Matthew Luken</h4>
 			<div class="class-schedule">
 				<p class="schedule-bold">Not teaching this quarter</p>
