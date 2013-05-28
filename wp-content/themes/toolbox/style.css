@@ -532,8 +532,7 @@ article.comment {
 	width:33.3%;
 	display: block;
 	float: left;
-	background-color: #9ED7C6;
-	height:300px;
+	/* background-color: #9ED7C6; */
 }
 
 h3.footer-h3 {
@@ -564,6 +563,11 @@ h4.footer-h4 {
 	font-weight: 400;
 	font-size: .9em;
 	padding: 0 0 0 5px;
+}
+
+.3col-wrapper {
+	position: fixed;
+	bottom:0;
 }
 
 .footer-info {
