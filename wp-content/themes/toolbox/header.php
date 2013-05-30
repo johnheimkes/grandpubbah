@@ -68,12 +68,24 @@
 
     // classes side menu animation drop down
 		$(function(){
-		   $('.menu > li > ul').hide();
-		   $('#menu-classes > li').click(function(){
-		       $(this).find('ul').slideToggle(500)
-		           .siblings().find('ul:visible').slideUp(500);
+		   $('#menu-classes > li > ul').hide();
+		   $('.menu-item-object-custom').click(function() {
+		       $(this).find('ul').show(500)
+		          .siblings().find('ul:visible').show(500);
 		   });
 		})
+
+
+ 		// Hover over class, then submenu drops down 
+		/*$('#menu-classes > li').hover(function() {
+            $(this).stop().animate({height: '100px'},1000,function(){});
+            $(this).find('ul').show(600);
+        }//gets called upone mousehover
+    ,
+    function(){
+            $(this).stop().animate({height: '20px'},1000,function(){});
+        } //gets called upone mouseout
+  ); //hover ends */
 
 </script>
 
@@ -98,7 +110,10 @@
 			<h1 id="site-title"><a href="<?php echo home_url( '/' ); ?>" class="title-link" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<!-- <h2 id="site-description"><?php bloginfo( 'description' ); ?></h2> -->
 		</hgroup>
-		<div id ="banner-image">Banner Image Here</div>
+		<div class="banner_image">
+			<img src="wp-content/themes/toolbox/images/banner/NEW-PUBBAH_HEADER1.png">
+		</div>
+		<!-- <div id ="banner-image">Banner Image Here</div> -->
 	</header><!-- #branding -->
 
 	<div id="main">

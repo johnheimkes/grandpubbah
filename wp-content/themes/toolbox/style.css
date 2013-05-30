@@ -126,11 +126,6 @@ p {
 
 /* =Header
 -------------------------------------------------------------- */
-#banner-image {
-	height: 360px;
-	background-color: #666;
-	margin: 0 0 0 0;
-}
 
 #site-title {
 	font-size: 1.2em;
@@ -580,6 +575,12 @@ h4.footer-h4 {
 
 .sub-menu {
 	display: none;
+}
+
+.class-menu {
+	font-family: "jubilat",sans-serif;
+	font-weight: 200;
+	margin: 0 0 10em 0;
 }
 
 
