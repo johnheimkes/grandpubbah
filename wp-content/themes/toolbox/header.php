@@ -66,26 +66,14 @@
         $('#nav_menu-2').scrollToFixed();
     });
 
-    // classes side menu animation drop down
+    /* classes side menu animation drop down
 		$(function(){
 		   $('#menu-classes > li > ul').hide();
 		   $('.menu-item-object-custom').click(function() {
 		       $(this).find('ul').show(500)
 		          .siblings().find('ul:visible').show(500);
 		   });
-		})
-
-
- 		// Hover over class, then submenu drops down 
-		/*$('#menu-classes > li').hover(function() {
-            $(this).stop().animate({height: '100px'},1000,function(){});
-            $(this).find('ul').show(600);
-        }//gets called upone mousehover
-    ,
-    function(){
-            $(this).stop().animate({height: '20px'},1000,function(){});
-        } //gets called upone mouseout
-  ); //hover ends */
+		}) */
 
 </script>
 
