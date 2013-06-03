@@ -63,7 +63,7 @@
         // Dock the header to the top of the window when scrolled past the banner.
         // This is the default behavior.
 
-        $('#nav_menu-2').scrollToFixed();
+        $('#dc_jqaccordion_widget-2').scrollToFixed();
     });
 
     /* classes side menu animation drop down
