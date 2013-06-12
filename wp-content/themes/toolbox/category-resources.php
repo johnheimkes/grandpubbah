@@ -1,27 +1,22 @@
 <?php
 /**
- * Blog template.
+ * Resources template.
  *
  * @package Toolbox
  * @since Toolbox 0.1
  */
-
-$blog_query = new WP_Query(array(
-    'post_type'      => 'post',
-    'posts_per_page' => -1,
-));
 
 get_header(); ?>
 
 		<div id="primary">
 			<div id="content" role="main">
 
-			<?php if ( $blog_query->have_posts() ) : ?>
+			<?php if ( have_posts() ) : ?>
 
 				<?php toolbox_content_nav( 'nav-above' ); ?>
 
 				<?php /* Start the Loop */ ?>
-				<?php while ( $blog_query->have_posts() ) : $blog_query->the_post(); ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
                     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                     	<header class="entry-header">
